@@ -1,5 +1,3 @@
-console.log("Client side Java Script page");
-
 const search = document.querySelector("input");
 const weatherForm = document.querySelector("form");
 const message = document.querySelector("#data");
