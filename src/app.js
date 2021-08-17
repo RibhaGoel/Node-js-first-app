@@ -46,7 +46,9 @@ app.get("/about", (req, res) => {
 app.get("/help", (req, res) => {
   res.render("help", { title: "This is my help page" });
 });
-const port = 3000;
+
+// Env variable for HEroku
+const port = process.env.PORT || 3000;
 
 app.get("/weather", (req, res) => {
   if (!req.query.place) {

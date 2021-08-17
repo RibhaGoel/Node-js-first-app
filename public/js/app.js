@@ -6,7 +6,7 @@ const errorMsg = document.querySelector("#error");
 weatherForm.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(search.value);
-  fetch("http://localhost:3000/weather?place=" + search.value)
+  fetch("/weather?place=" + search.value)
     .then((res) => {
       console.log(res);
       if (res.error) {
